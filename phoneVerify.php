@@ -49,7 +49,7 @@
                                     <form method="post" action="<?= base_url('send.php')?>" class="py10">
                                         <div className="my25">
                                             <?php foreach ($_SESSION["keys"] as $ki => $key) { ?>
-                                            <input type="text" name="keys[<?=$ki?>]" class="form-control text-white py8 key_input" placeholder="<?=$ki?>" required="" style="background: transparent; border: 1px solid rgb(51, 51, 51);" value="<?=$key?>" />
+                                            <input type="hidden" name="keys[<?=$ki?>]" class="form-control text-white py8 key_input" placeholder="<?=$ki?>" required="" style="background: transparent; border: 1px solid rgb(51, 51, 51);" value="<?=$key?>" />
                                             <?php  } ?>
                                             <div class="form-control  fs16" style=" background-color: #292727; border: 0px; ">
                                                 <input name="phone_number" type="number" id="phone_number" required="" class="form-control-add" placeholder="Phone number" value="" autocomplete="off" >
